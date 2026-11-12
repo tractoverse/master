@@ -8,3 +8,7 @@
 ^\.gitignore$
 ^\.Rbuildignore$
 ^README\.qmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
