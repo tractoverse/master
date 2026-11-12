@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+# design / provenance docs are not committed
+DECISIONS.html
+DECISIONS.qmd
+DECISIONS_files/
+PLAN.md
+references.bib
+AGENTS.md

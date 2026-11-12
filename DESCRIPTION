@@ -1,0 +1,36 @@
+Package: master
+Title: Multivariate Axonal Simulator for Tractography Evaluation
+Version: 0.0.0.9000
+Authors@R: 
+    person("Aymeric", "Stamm", , "aymeric.stamm@cnrs.fr", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-8725-3654"))
+Description: Simulation of white-matter bundles (fascicles) and
+    microstructural attributes for diffusion MRI tractography. Implements
+    the FDA-based generative model of the MASTER design: a centerline
+    reference pathway is assembled from a flat central interaction segment
+    with smooth bending arms,
+    reparametrized by curvilinear arc length, and perturbed by zero-mean
+    functional random fields of axons expressed in a B-spline basis with
+    exponentially autocorrelated Gaussian coefficients. Emits
+    fiber::bundle objects ready for interactive visualization with
+    'rtists'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    cli,
+    fiber,
+    methods,
+    rlang
+Suggests:
+    rtists,
+    knitr,
+    rmarkdown,
+    tinytest
+URL: 
+    https://github.com/tractoverse/master,
+    https://tractoverse.github.io/master/
+BugReports: https://github.com/tractoverse/master/issues
+Config/roxygen2/version: 8.1.1
+Config/roxygen2/markdown: TRUE
+Roxygen: list(markdown = TRUE)
+
