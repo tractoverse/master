@@ -27,6 +27,7 @@ Suggests:
     rmarkdown,
     rtists,
     tinytest
+Remotes: tractoverse/rtists
 URL: 
     https://github.com/tractoverse/master,
     https://tractoverse.github.io/master/
