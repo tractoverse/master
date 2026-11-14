@@ -22,9 +22,10 @@ Imports:
     methods,
     rlang
 Suggests:
-    rtists,
     knitr,
+    pkgdown,
     rmarkdown,
+    rtists,
     tinytest
 URL: 
     https://github.com/tractoverse/master,
