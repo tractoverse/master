@@ -27,6 +27,9 @@ Suggests:
     rmarkdown,
     rtists,
     tinytest
+VignetteBuilder:
+    knitr
+Config/Needs/website: quarto
 Remotes: tractoverse/rtists
 URL: 
     https://github.com/tractoverse/master,

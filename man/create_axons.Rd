@@ -11,7 +11,8 @@ create_axons(
   variance = 0.02,
   autocorrelation = 2,
   radius = NULL,
-  seed = NULL
+  seed = NULL,
+  ...
 )
 }
 \arguments{
@@ -32,6 +33,9 @@ independent and perfectly coherent streamlines).}
 \item{radius}{Optional axonal radius (scalar or length-\code{N} vector).}
 
 \item{seed}{Optional integer seed for reproducibility of the draws.}
+
+\item{...}{Additional scalar values stored per stream in
+\code{streamline_data} (e.g. \code{parcel}, \code{branch} labels in \code{\link[=simulate_pyramidal_tract]{simulate_pyramidal_tract()}}).}
 }
 \value{
 A \code{fiber::bundle} of \code{n_axons} streamlines.

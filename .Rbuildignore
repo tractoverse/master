@@ -3,7 +3,6 @@
 ^DECISIONS\.qmd$
 ^DECISIONS_files$
 ^PLAN\.md$
-^references\.bib$
 ^\.git$
 ^\.gitignore$
 ^\.Rbuildignore$
