@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/tractoverse/master/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/tractoverse/master/blob/feat/pyt-model/DESCRIPTION)
 
 Stamm A (2026). *master: Multivariate Axonal Simulator for Tractography
 Evaluation*. R package version 0.0.0.9000,

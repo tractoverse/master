@@ -14,7 +14,8 @@ create_axons(
   variance = 0.02,
   autocorrelation = 2,
   radius = NULL,
-  seed = NULL
+  seed = NULL,
+  ...
 )
 ```
 
@@ -51,6 +52,12 @@ create_axons(
 - seed:
 
   Optional integer seed for reproducibility of the draws.
+
+- ...:
+
+  Additional scalar values stored per stream in `streamline_data` (e.g.
+  `parcel`, `branch` labels in
+  [`simulate_pyramidal_tract()`](https://tractoverse.github.io/master/reference/simulate_pyramidal_tract.md)).
 
 ## Value
 

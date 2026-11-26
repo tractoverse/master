@@ -22,6 +22,11 @@ the file name, a running point counter and the three coordinates
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/pyramidal-tract.html">The pyramidal tract: anatomy and mathematical model</a></li>
+  </ul></li>
+<li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json"></form></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/tractoverse/master/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
@@ -33,7 +38,7 @@ the file name, a running point counter and the three coordinates
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Export a <code>fiber::bundle_set</code> (or <code>bundle</code>) to a VTP-to-CSV-compatible file</h1>
-      <small class="dont-index">Source: <a href="https://github.com/tractoverse/master/blob/main/R/export.R" class="external-link"><code>R/export.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/tractoverse/master/blob/feat/pyt-model/R/export.R" class="external-link"><code>R/export.R</code></a></small>
       <div class="d-none name"><code>generate_csv.Rd</code></div>
     </div>
 
@@ -78,12 +83,12 @@ the file name, a running point counter and the three coordinates
 <span class="r-in"><span><span class="va">out</span> <span class="op">&lt;-</span> <span class="fu">generate_csv</span><span class="op">(</span><span class="va">b</span>, <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempfile</a></span><span class="op">(</span>fileext <span class="op">=</span> <span class="st">".csv"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html" class="external-link">read.csv</a></span><span class="op">(</span><span class="va">out</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                   File Point           X            Y            Z Tract</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 file19d917ebd8bb.csv     0 -0.04994454  0.139913893  0.096364501     1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 file19d917ebd8bb.csv     1  0.07180139  0.093720189  0.069045253     1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 file19d917ebd8bb.csv     2  0.23657527 -0.004234815  0.030889684     1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 file19d917ebd8bb.csv     3  0.43312837 -0.109063975 -0.004054042     1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 file19d917ebd8bb.csv     4  0.64499874 -0.187065846 -0.021771059     1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 file19d917ebd8bb.csv     5  0.86121282 -0.227519520 -0.015306025     2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 file19f952becef8.csv     0 -0.04994454  0.139913893  0.096364501     1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 file19f952becef8.csv     1  0.07180139  0.093720189  0.069045253     1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 file19f952becef8.csv     2  0.23657527 -0.004234815  0.030889684     1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 file19f952becef8.csv     3  0.43312837 -0.109063975 -0.004054042     1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 file19f952becef8.csv     4  0.64499874 -0.187065846 -0.021771059     1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 file19f952becef8.csv     5  0.86121282 -0.227519520 -0.015306025     2</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
