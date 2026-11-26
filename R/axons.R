@@ -162,6 +162,8 @@ NULL
 #'   independent and perfectly coherent streamlines).
 #' @param radius Optional axonal radius (scalar or length-`N` vector).
 #' @param seed Optional integer seed for reproducibility of the draws.
+#' @param ... Additional scalar values stored per stream in
+#'   `streamline_data` (e.g. `parcel`, `branch` labels in [simulate_pyramidal_tract()]).
 #' @returns A `fiber::bundle` of `n_axons` streamlines.
 #' @export
 #' @examples
@@ -178,7 +180,8 @@ create_axons <- function(
     variance = 0.02,
     autocorrelation = 2,
     radius = NULL,
-    seed = NULL
+    seed = NULL,
+    ...
 ) {
   centerline <- as.matrix(centerline)
   n <- nrow(centerline)
@@ -213,7 +216,7 @@ create_axons <- function(
       dir_y = sh$dir_y,
       dir_z = sh$dir_z
     )
-    streamline_data <- list(bundle_id = "bend")
+    streamline_data <- list(bundle_id = "bend", ...)
     if (!is.null(radius)) {
       if (length(radius) == 1L) {
         streamline_data$radius <- radius

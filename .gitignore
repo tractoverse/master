@@ -7,6 +7,8 @@ DECISIONS.html
 DECISIONS.qmd
 DECISIONS_files/
 PLAN.md
-references.bib
 AGENTS.md
 docs
+# rendered vignette output (source .qmd is committed)
+vignettes/*.html
+vignettes/*_files/
